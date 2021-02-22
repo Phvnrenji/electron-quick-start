@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div id="tag">
+    <div class="tagChild">
+      <p class="tagClass">资质</p>
+      <input type="button" value="新手" class="active tagButton">
+      <input type="button" value="资深干员" class="active tagButton">
+      <input type="button" value="高级资深干员" class="active tagButton">
+    </div>
+    <div class="tagChild">
+      <p class="tagClass">位置</p>
+      <input type="button" value="远程位" class="tagButton">
+      <input type="button" value="近战位" class="active tagButton">
+    </div>
+    <div class="tagChild">
+      <p class="tagClass">职业</p>
+      <input type="button" value="先锋" class="tagButton">
+      <input type="button" value="狙击" class="tagButton">
+      <input type="button" value="医疗" class="tagButton">
+      <input type="button" value="术师" class="tagButton">
+      <input type="button" value="近卫" class="tagButton">
+      <input type="button" value="重装" class="tagButton">
+      <input type="button" value="辅助" class="tagButton">
+      <input type="button" value="特种" class="active tagButton">
+    </div>
+    <div class="tagChild">
+      <p class="tagClass">标签</p>
+      <input type="button" value="治疗" class="tagButton">
+      <input type="button" value="支援" class="tagButton">
+      <input type="button" value="输出" class="tagButton">
+      <input type="button" value="群攻" class="tagButton">
+      <input type="button" value="减速" class="tagButton">
+      <input type="button" value="生存" class="tagButton">
+      <input type="button" value="防护" class="tagButton">
+      <input type="button" value="削弱" class="tagButton">
+      <input type="button" value="位移" class="tagButton">
+      <input type="button" value="爆发" class="tagButton">
+      <input type="button" value="控场" class="tagButton">
+      <input type="button" value="召唤" class="tagButton">
+      <input type="button" value="快速复活" class="tagButton">
+      <input type="button" value="费用回复" class="tagButton">
+      <input type="button" value="支援机械" class="tagButton">
+    </div>
+  </div>
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
 </html>
